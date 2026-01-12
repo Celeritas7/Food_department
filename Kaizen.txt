@@ -1,0 +1,101 @@
+also take this input, You are defining the MINIMAL VIABLE PRODUCT (MVP) for a local-first cooking &
+grocery management application.
+This prompt strictly depends on:
+- PROMPT-1: Application System Contract
+- PROMPT-2: Application Data Model
+- PROMPT-3: Domain Logic Engines
+- PROMPT-4: Local Storage Mapping
+- PROMPT-5: Sync & Import Strategy
+- PROMPT-6: Workflow Actions
+- PROMPT-7: UI Composition Rules
+- PROMPT-8: Edge-case Validation & Test Scenarios
+You MUST NOT violate any of them.
+❗ DO NOT redesign logic
+❗ DO NOT add features
+❗ DO NOT optimize prematurely
+❗ DO NOT assume multiple users
+❗ DO NOT assume cloud infrastructure
+Your task is to CUT the system down to the SMALLEST set of features
+that still proves the system works end-to-end.
+---
+## MVP PHILOSOPHY (LOCKED)
+- MVP must be usable daily
+- MVP must exercise ALL core logic engines
+- MVP must support at least one complete cooking cycle:
+  Plan → Check availability → Buy → Cook → Update stock
+- MVP must be buildable quickly
+- Anything not required for daily use is OUT
+---
+## REQUIRED MVP CAPABILITIES (NON-NEGOTIABLE)
+The MVP MUST include:
+### Core Data
+- Ingredients
+- Final Dishes
+- Intermediates (if required by dishes)
+- Basic Shop & Price data (minimal)
+### Core Logic Engines
+- Availability Engine
+- Quantity Aggregation Engine
+- Priority Propagation Engine
+- Spoilage & Expiry Engine
+### Core Workflow Actions
+- Buy Ingredient
+- Prepare Intermediate
+- Cook Final Dish
+### Core UI Surfaces
+- Ingredients Surface
+- Dishes Surface
+- Shopping List Surface
+(Local-first, offline-capable)
+---
+## EXPLICITLY INCLUDED (MVP YES)
+Mark these as INCLUDED:
+- Local storage (single chosen backend)
+- Manual data entry
+- CSV import/export (basic)
+- Stock quantity tracking
+- Expiry detection
+- Priority propagation
+- Shopping list auto-generation
+- Blocking invalid actions (cook when unavailable)
+---
+## EXPLICITLY EXCLUDED (MVP NO)
+Mark these as OUT OF SCOPE for MVP:
+- Real-time sync
+- Multi-device sync
+- User accounts
+- Collaboration
+- Notifications / reminders
+- Route optimization
+- Advanced analytics
+- Visual dashboards
+- Historical reports
+- Undo / redo (optional later)
+- Price history charts
+- Recipe scaling UI
+---
+## MVP SUCCESS CRITERIA (TESTABLE)
+Define success as:
+- A user can plan multiple dishes
+- The app correctly computes:
+  - Availability
+  - Required quantities
+  - Shopping list
+- Buying ingredients updates stock correctly
+- Cooking a dish updates stock correctly
+- Expiry status updates automatically
+- No stock corruption occurs after restart
+- App works fully offline
+---
+## OUTPUT CONSTRAINT
+Respond ONLY with:
+1. A concise list of INCLUDED MVP features
+2. A concise list of EXCLUDED features
+3. A 5–7 step MVP user journey (end-to-end)
+4. Clear justification for each exclusion
+DO NOT:
+- Suggest future features
+- Propose timelines
+- Recommend tools
+- Add UI polish ideas
+Wait for the next instruction.
